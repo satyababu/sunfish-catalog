@@ -1,5 +1,5 @@
 cscflow:
-  image: dockerhub.cisco.com/sunfish/csc-flowstudio:ges
+  image: dockerhub.cisco.com/sunfish/csc-flowstudio
   labels:
     io.rancher.scheduler.affinity:host_label_ne: FNAME=HOST01
     io.rancher.container.start_once: 'true'
