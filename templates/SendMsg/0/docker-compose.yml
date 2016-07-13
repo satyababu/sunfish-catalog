@@ -5,9 +5,8 @@ cscflow:
     io.rancher.container.start_once: 'true'
   expose:
    - 1880/tcp
-  volume_driver: nodeflow-convoy-gluster
   volumes:
-   - nodeflow:/opt/cisco/flowstudio/.data
+   - /mnt/nfs/var/nfsshare/:/opt/cisco/flowstudio/.data
   environment:
     SEND_TO: ${SEND_TO}
     MESSAGE: ${SEND_MESSAGE}
